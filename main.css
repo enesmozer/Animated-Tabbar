@@ -316,6 +316,25 @@ template {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end; }
+  @media (min-width: 768px) {
+    .container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      position: absolute;
+      width: 450px;
+      height: 100px;
+      background-color: #fff;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); } }
   .container .tab {
     display: -webkit-box;
     display: -ms-flexbox;

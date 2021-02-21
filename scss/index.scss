@@ -3,6 +3,18 @@
   height: 100vh;
   display: flex;
   align-items: flex-end;
+  @include mq("tablet") {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 450px;
+    height: 100px;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
   .tab {
     display: flex;
     align-items: center;
