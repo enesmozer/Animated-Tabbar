@@ -1,5 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,300&display=swap');
 .container{
-    background-color: red;
     height: 100vh;
     display: flex;
     align-items: flex-end;
@@ -9,11 +9,16 @@
         justify-content: space-around;
         height: 80px;
         width: 100%;
-        background-color: bisque ;
+        background-color: green ;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
         .button{
+            appearance: none;
             display: flex;
             flex-direction: column;
             align-items: center;
+            text-decoration: none;
+            color: black;
             .icon{
                 font-size: 20px;
                 height: 1em;
@@ -21,8 +26,13 @@
                 margin-bottom: 10px;
             }
             .text{
-        
+                font-family: 'Roboto', sans-serif;
+                margin-left: 5px;
             }
         }
+    }
+    .active{
+        color: white !important;
+        animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
 }
