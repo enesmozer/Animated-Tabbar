@@ -307,31 +307,40 @@ template {
 [hidden] {
   display: none; }
 
-.container .tab {
+.container {
+  background-color: red;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  height: 80px;
-  width: 100%;
-  background-color: bisque; }
-  .container .tab .button {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+  .container .tab {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
-    .container .tab .button .icon {
-      font-size: 20px;
-      height: 1em;
-      width: 1em;
-      margin-bottom: 10px; }
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 80px;
+    width: 100%;
+    background-color: bisque; }
+    .container .tab .button {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .container .tab .button .icon {
+        font-size: 20px;
+        height: 1em;
+        width: 1em;
+        margin-bottom: 10px; }
