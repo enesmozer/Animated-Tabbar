@@ -3,7 +3,7 @@
   height: 100vh;
   display: flex;
   align-items: flex-end;
-  @include mq("tablet") {
+  @include mq("large") {
     display: flex;
     justify-content: center;
     align-items: center;
