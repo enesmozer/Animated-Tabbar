@@ -17,7 +17,7 @@ gulp.task('browser-sync', function () {
 })
 
 gulp.task('css', () => {
-  return gulp.src('./scss/main.scss')
+  return gulp.src('./assets/scss/main.scss')
   .pipe(plumber([{errorHandler: false}]))
   .pipe(sass())
   .pipe(prefix())
